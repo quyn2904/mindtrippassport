@@ -138,6 +138,51 @@ body {
   align-items: center;
 }
 
+#b6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-p7 {
+  padding: 0 2rem 0 1.5rem;
+  font-family: "PNJ";
+  font-size: 3rem;
+  color: #083a6d;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.img_nav {
+  width: 25%;
+  height: auto;
+}
+
+.img_nav img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: #083a6d !important;
+  font-family: "PNJ";
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
 /* Paper flip effect */
 .flipped .front,
 .flipped .back {
