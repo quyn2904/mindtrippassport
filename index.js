@@ -66,56 +66,58 @@ function goNextPage() {
         paper3.style.zIndex = 3;
         console.log(currentLocation);
         break;
-      case 4:
+      case 4: {
         paper4.classList.add("flipped");
         paper4.style.zIndex = 4;
-        // document.querySelectorAll("button").forEach((btn) => {
-        //   btn.style.display = "none";
-        // });
-        // let countdownTime = 120;
-        // let mouseMoved = false;
-        // let keyPressed = false;
-        // // Get the countdown container element
-        // const countdownElement = document.getElementById("countdown");
+        document.querySelectorAll("button").forEach((btn) => {
+          btn.style.display = "none";
+        });
+        let countdownTime = 120;
+        let mouseMoved = false;
+        let keyPressed = false;
+        // Get the countdown container element
+        const countdownElement = document.getElementById("countdown");
 
-        // // Update the countdown every second
-        // const countdownInterval = setInterval(function () {
-        //   // Calculate minutes and seconds
-        //   const minutes = Math.floor(countdownTime / 60);
-        //   const seconds = countdownTime % 60;
+        // Update the countdown every second
+        const countdownInterval = setInterval(function () {
+          // Calculate minutes and seconds
+          const minutes = Math.floor(countdownTime / 60);
+          const seconds = countdownTime % 60;
 
-        //   // Display the countdown
-        //   countdownElement.innerHTML = `${minutes < 10 ? "0" : ""}${minutes}:${
-        //     seconds < 10 ? "0" : ""
-        //   }${seconds}`;
+          // Display the countdown
+          countdownElement.innerHTML = `${minutes < 10 ? "0" : ""}${minutes}:${
+            seconds < 10 ? "0" : ""
+          }${seconds}`;
 
-        //   // Decrease the countdown time
-        //   countdownTime--;
+          // Decrease the countdown time
+          countdownTime--;
 
-        //   // Check if the countdown is finished
-        //   if (countdownTime < 0) {
-        //     clearInterval(countdownInterval);
-        //     countdownElement.innerHTML = "Time's up!";
-        //     document.querySelectorAll("button").forEach((btn) => {
-        //       btn.style.display = "block";
-        //     });
-        //   }
-        //   // document.addEventListener("mousemove", (event) => {
-        //   //   if (!mouseMoved) {
-        //   //     mouseMoved = true;
-        //   //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
-        //   //     alert("Mouse moved");
-        //   //   }
-        //   // });
-        //   // document.addEventListener("keydown", (event) => {
-        //   //   if (!keyPressed) {
-        //   //     keyPressed = true;
-        //   //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
-        //   //     alert("Key pressed");
-        //   //   }
-        //   // });
-        // }, 1000);
+          // Check if the countdown is finished
+          if (countdownTime < 0) {
+            clearInterval(countdownInterval);
+            countdownElement.innerHTML = "Time's up!";
+            document.querySelectorAll("button").forEach((btn) => {
+              btn.style.display = "block";
+            });
+          }
+          // document.addEventListener("mousemove", (event) => {
+          //   if (!mouseMoved) {
+          //     mouseMoved = true;
+          //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
+          //     alert("Mouse moved");
+          //   }
+          // });
+          // document.addEventListener("keydown", (event) => {
+          //   if (!keyPressed) {
+          //     keyPressed = true;
+          //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
+          //     alert("Key pressed");
+          //   }
+          // });
+        }, 1000);
+        document.getElementById("audio").play();
         break;
+      }
       case 5:
         paper5.classList.add("flipped");
         paper5.style.zIndex = 5;
