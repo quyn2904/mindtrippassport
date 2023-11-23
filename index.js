@@ -19,11 +19,21 @@ nextBtn.addEventListener("click", goNextPage);
 let currentLocation = 1;
 let numOfPapers = 7;
 let maxLocation = numOfPapers + 1;
+let width = document.body.clientWidth;
+if (width > 1600) {
+  buttonTrans = "350px";
+} else if (width > 1200) {
+  buttonTrans = "270px";
+} else if (width > 991) {
+  buttonTrans = "200px";
+} else {
+  buttonTrans = "150px";
+}
 
 function openBook() {
   book.style.transform = "translateX(50%)";
-  prevBtn.style.transform = "translateX(-350px)";
-  nextBtn.style.transform = "translateX(350px)";
+  prevBtn.style.transform = `translateX(-${buttonTrans})`;
+  nextBtn.style.transform = `translateX(${buttonTrans})`;
 }
 
 function closeBook(isAtBeginning) {
@@ -59,52 +69,52 @@ function goNextPage() {
       case 4:
         paper4.classList.add("flipped");
         paper4.style.zIndex = 4;
-        document.querySelectorAll("button").forEach((btn) => {
-          btn.style.display = "none";
-        });
-        let countdownTime = 120;
-        let mouseMoved = false;
-        let keyPressed = false;
-        // Get the countdown container element
-        const countdownElement = document.getElementById("countdown");
+        // document.querySelectorAll("button").forEach((btn) => {
+        //   btn.style.display = "none";
+        // });
+        // let countdownTime = 120;
+        // let mouseMoved = false;
+        // let keyPressed = false;
+        // // Get the countdown container element
+        // const countdownElement = document.getElementById("countdown");
 
-        // Update the countdown every second
-        const countdownInterval = setInterval(function () {
-          // Calculate minutes and seconds
-          const minutes = Math.floor(countdownTime / 60);
-          const seconds = countdownTime % 60;
+        // // Update the countdown every second
+        // const countdownInterval = setInterval(function () {
+        //   // Calculate minutes and seconds
+        //   const minutes = Math.floor(countdownTime / 60);
+        //   const seconds = countdownTime % 60;
 
-          // Display the countdown
-          countdownElement.innerHTML = `${minutes < 10 ? "0" : ""}${minutes}:${
-            seconds < 10 ? "0" : ""
-          }${seconds}`;
+        //   // Display the countdown
+        //   countdownElement.innerHTML = `${minutes < 10 ? "0" : ""}${minutes}:${
+        //     seconds < 10 ? "0" : ""
+        //   }${seconds}`;
 
-          // Decrease the countdown time
-          countdownTime--;
+        //   // Decrease the countdown time
+        //   countdownTime--;
 
-          // Check if the countdown is finished
-          if (countdownTime < 0) {
-            clearInterval(countdownInterval);
-            countdownElement.innerHTML = "Time's up!";
-            document.querySelectorAll("button").forEach((btn) => {
-              btn.style.display = "block";
-            });
-          }
-          // document.addEventListener("mousemove", (event) => {
-          //   if (!mouseMoved) {
-          //     mouseMoved = true;
-          //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
-          //     alert("Mouse moved");
-          //   }
-          // });
-          // document.addEventListener("keydown", (event) => {
-          //   if (!keyPressed) {
-          //     keyPressed = true;
-          //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
-          //     alert("Key pressed");
-          //   }
-          // });
-        }, 1000);
+        //   // Check if the countdown is finished
+        //   if (countdownTime < 0) {
+        //     clearInterval(countdownInterval);
+        //     countdownElement.innerHTML = "Time's up!";
+        //     document.querySelectorAll("button").forEach((btn) => {
+        //       btn.style.display = "block";
+        //     });
+        //   }
+        //   // document.addEventListener("mousemove", (event) => {
+        //   //   if (!mouseMoved) {
+        //   //     mouseMoved = true;
+        //   //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
+        //   //     alert("Mouse moved");
+        //   //   }
+        //   // });
+        //   // document.addEventListener("keydown", (event) => {
+        //   //   if (!keyPressed) {
+        //   //     keyPressed = true;
+        //   //     // Xử lý sự kiện khi chuột được di chuyển lần đầu tiên
+        //   //     alert("Key pressed");
+        //   //   }
+        //   // });
+        // }, 1000);
         break;
       case 5:
         paper5.classList.add("flipped");
