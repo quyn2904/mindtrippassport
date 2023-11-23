@@ -37,7 +37,7 @@ if (width > 2300) {
 } else if (width > 1200) {
   buttonTrans = "270px";
 } else if (width > 991) {
-  buttonTrans = "200px";
+  buttonTrans = "210px";
 } else {
   buttonTrans = "150px";
 }
@@ -96,9 +96,9 @@ function goNextPage() {
         paper4.style.zIndex = 4;
         prevBtn.style.display = "block";
         nextBtn.style.display = "block";
-        document.querySelectorAll("button").forEach((btn) => {
-          btn.style.display = "none";
-        });
+        // document.querySelectorAll("button").forEach((btn) => {
+        //   btn.style.display = "none";
+        // });
         let countdownTime = 120;
         let mouseMoved = false;
         let keyPressed = false;

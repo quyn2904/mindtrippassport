@@ -265,7 +265,7 @@ i {
   z-index: 1;
 }
 
-@media only screen and (max-width: 2560px) {
+@media only screen and (max-width: 2560px) and (max-height: 1440px) {
   /* Kiểu dáng cho màn hình có chiều rộng tối đa 1600px */
   .book {
     width: 36%;
@@ -305,7 +305,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 2300px) {
+@media only screen and (max-width: 2300px) and (min-height: 1100px) {
   /* Kiểu dáng cho màn hình có chiều rộng tối đa 1600px */
   .book {
     width: 36%;
@@ -345,7 +345,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1900px) and (min-height: 900px) {
   /* Kiểu dáng cho màn hình có chiều rộng tối đa 1900px */
   .book {
     width: 36%;
@@ -381,7 +381,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1600px) and (max-height: 700px) {
   /* Kiểu dáng cho màn hình có chiều rộng tối đa 1600px */
   .book {
     width: 36%;
@@ -399,14 +399,21 @@ i {
 
   .p-p1 {
     padding: 0 5rem 0 4.5rem;
+    font-size: 3rem;
   }
 
   .p-p2 {
     padding: 0 5rem 0 4.5rem;
+    font-size: 3rem;
   }
 
   .p-timer {
     padding: 0 8rem 0 8rem;
+    font-size: 3rem;
+  }
+
+  .p-p7 {
+    font-size: 3rem;
   }
 
   .item_nav span {
@@ -414,7 +421,7 @@ i {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (max-height: 600px) {
   .book {
     width: 36%;
     height: 90%;
