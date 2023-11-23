@@ -22,6 +22,7 @@ body {
   font-family: sans-serif;
   background-image: url(./assets/BG.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Book */
@@ -51,6 +52,10 @@ body {
   left: 0;
   transform-origin: left;
   transition: transform 0.5s;
+  /* border-top: 3px solid blue;
+  border-right: 3px solid blue;
+  border-bottom: 3px solid blue; */
+  border-radius: 0 2rem 2rem 0;
 }
 
 .front {
@@ -61,6 +66,7 @@ body {
 
 .back {
   z-index: 0;
+  /* border-left: 3px solid powderblue; */
 }
 
 .front-content,
@@ -120,7 +126,7 @@ body {
 }
 
 .countdown-container {
-  background-image: url(./assets/cloud.webp);
+  background-image: url(./assets/403408826_1123424415320346_7194572815024836286_n.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,6 +162,7 @@ body {
 }
 
 .item_nav {
+  padding: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -163,7 +170,7 @@ body {
 }
 
 .img_nav {
-  width: 25%;
+  width: 40%;
   height: auto;
 }
 
@@ -177,6 +184,17 @@ a {
   font-family: "PNJ";
   font-size: 2.5rem;
   text-decoration: underline;
+}
+
+#b7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#countdown {
+  font-size: 10rem;
 }
 
 /* Paper flip effect */
@@ -247,6 +265,10 @@ i {
     height: 90%;
   }
 
+  #countdown {
+    font-size: 8rem;
+  }
+
   .p-p1 {
     padding: 0 5rem 0 4.5rem;
   }
@@ -261,7 +283,39 @@ i {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* Kiểu dáng cho màn hình có chiều rộng tối đa 1200px */
+  .book {
+    width: 36%;
+    height: 90%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .p-p1 {
+    padding: 0 3rem 0 2.5rem;
+    font-size: 2rem;
+  }
+
+  .p-p2 {
+    padding: 0 3rem 0 2.5rem;
+    font-size: 2rem;
+  }
+
+  #countdown {
+    font-size: 6rem;
+  }
+
+  .p-timer {
+    padding: 0 1rem 0 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .p-p7 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -289,6 +343,10 @@ i {
     padding: 0 1rem 0 0.5rem;
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+
+  #countdown {
+    font-size: 4rem;
   }
 
   .p-p7 {
