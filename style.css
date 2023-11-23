@@ -239,7 +239,7 @@ i {
   /* Kiểu dáng cho màn hình có chiều rộng tối đa 1600px */
   .book {
     width: 36%;
-    height: 66%;
+    height: 80%;
   }
 
   iframe {
