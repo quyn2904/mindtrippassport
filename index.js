@@ -28,7 +28,7 @@ let numOfPapers = 7;
 let maxLocation = numOfPapers + 1;
 let width = document.body.clientWidth;
 if (width > 1600) {
-  buttonTrans = "350px";
+  buttonTrans = "340px";
 } else if (width > 1200) {
   buttonTrans = "270px";
 } else if (width > 991) {
