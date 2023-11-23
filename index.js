@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   if (window.innerWidth < window.innerHeight) {
     alert("Please use landscape for the better experience!");
+    window.location.reload();
   }
 });
 
@@ -27,7 +28,11 @@ prevBtn.style.display = "none";
 let numOfPapers = 7;
 let maxLocation = numOfPapers + 1;
 let width = document.body.clientWidth;
-if (width > 1600) {
+if (width > 2300) {
+  buttonTrans = "470px";
+} else if (width > 1900) {
+  buttonTrans = "410px";
+} else if (width > 1600) {
   buttonTrans = "340px";
 } else if (width > 1200) {
   buttonTrans = "270px";

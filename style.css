@@ -92,6 +92,18 @@ body {
   height: auto;
 }
 
+#f1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 2rem 2rem 0;
+}
+
+#f1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 2rem 2rem 0;
+}
+
 .p-p1 {
   padding: 0 4rem 0 3.5rem;
   font-family: "PNJ";
@@ -251,6 +263,122 @@ i {
 
 #p7 {
   z-index: 1;
+}
+
+@media only screen and (max-width: 2560px) {
+  /* Kiểu dáng cho màn hình có chiều rộng tối đa 1600px */
+  .book {
+    width: 36%;
+    height: 90%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  #countdown {
+    font-size: 10rem;
+  }
+
+  .p-p1 {
+    padding: 0 5rem 0 4.5rem;
+    font-size: 6rem;
+  }
+
+  .p-p2 {
+    padding: 0 5rem 0 4.5rem;
+    font-size: 5rem;
+  }
+
+  .p-p7 {
+    font-size: 4.5rem;
+  }
+
+  .p-timer {
+    padding: 0 8rem 0 8rem;
+    font-size: 5rem;
+  }
+
+  .item_nav span {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 2300px) {
+  /* Kiểu dáng cho màn hình có chiều rộng tối đa 1600px */
+  .book {
+    width: 36%;
+    height: 90%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  #countdown {
+    font-size: 10rem;
+  }
+
+  .p-p1 {
+    padding: 0 5rem 0 4.5rem;
+    font-size: 6rem;
+  }
+
+  .p-p2 {
+    padding: 0 5rem 0 4.5rem;
+    font-size: 5rem;
+  }
+
+  .p-p7 {
+    font-size: 4.5rem;
+  }
+
+  .p-timer {
+    padding: 0 8rem 0 8rem;
+    font-size: 5rem;
+  }
+
+  .item_nav span {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  /* Kiểu dáng cho màn hình có chiều rộng tối đa 1900px */
+  .book {
+    width: 36%;
+    height: 90%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  #countdown {
+    font-size: 10rem;
+  }
+
+  .p-p1 {
+    padding: 0 5rem 0 4.5rem;
+    font-size: 4rem;
+  }
+
+  .p-p2 {
+    padding: 0 5rem 0 4.5rem;
+    font-size: 4rem;
+  }
+
+  .p-timer {
+    padding: 0 8rem 0 8rem;
+    font-size: 4rem;
+  }
+
+  .item_nav span {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 1600px) {
