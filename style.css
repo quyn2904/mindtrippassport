@@ -281,7 +281,7 @@ i {
     padding: 0 8rem 0 8rem;
   }
 
-  .img_nav span {
+  .item_nav span {
     font-size: 2rem;
   }
 }
@@ -321,7 +321,7 @@ i {
     font-size: 1.5rem;
   }
 
-  .img_nav span {
+  .item_nav span {
     font-size: 1.5rem;
   }
 }
@@ -361,8 +361,8 @@ i {
     font-size: 1.7rem;
   }
 
-  .img_nav span {
-    font-size: 1.5rem;
+  .item_nav span {
+    font-size: 1rem;
   }
 }
 
