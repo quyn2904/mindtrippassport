@@ -21,7 +21,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-image: url(./assets/BG.png);
+  background-image: url(./assets/BG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -62,7 +62,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  background-image: url(./assets/_OPENEDD\ PASSPORT.png);
+  background-image: url(./assets/_OPENEDD\ PASSPORT.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

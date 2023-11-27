@@ -96,9 +96,9 @@ function goNextPage() {
         paper4.style.zIndex = 4;
         prevBtn.style.display = "block";
         nextBtn.style.display = "block";
-        document.querySelectorAll("button").forEach((btn) => {
-          btn.style.display = "none";
-        });
+        // document.querySelectorAll("button").forEach((btn) => {
+        //   btn.style.display = "none";
+        // });
         let countdownTime = 120;
         let mouseMoved = false;
         let keyPressed = false;
